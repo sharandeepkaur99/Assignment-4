@@ -1,17 +1,28 @@
-h1 {
-  color: green;
-}
-
-h2 {
-  color: red;
-}
-
 #view {
   text-align: center;
   font-size: large
 }
 
+h1 {
+  background-color: #edd9f5;
+  text-align: center;
+  color: #691b88;
+}
 
+h2 {
+  background-color: #f5d4f1;
+  text-align: center;
+  color: #e033cb;
+}
+
+p {
+  color: #2d2bd3;
+}
+
+#divs {
+  border-top: 4px solid violet;
+  border-bottom: 4px solid violet;
+}
 
 input[type=text] {
    width: 100%;
