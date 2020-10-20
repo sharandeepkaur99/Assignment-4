@@ -1,54 +1,54 @@
   {
-    question: "What is the most used programming language?",
-    answers: {
+    "question": "What is the most used programming language?",
+    "answers": {
       a: "Java",
       b: "R",
       c: "C"
     },
-    correctAnswer: "c"
+    "correctAnswer": "c"
   },
   {
-    question: "Which is not a type of loop in programming?",
-    answers: {
+    "question": "Which is not a type of loop in programming?",
+    "answers": {
       a: "while",
       b: "if",
       c: "for"
     },
-    correctAnswer: "b"
+    "correctAnswer": "b"
   },
   {
-    question: "What is a specific set of rules for programming languages called?",
-    answers: {
+    "question": "What is a specific set of rules for programming languages called?",
+    "answers": {
       a: "syntax",
       b: "language",
       c: "semantic",
     },
-    correctAnswer: "a"
+    "correctAnswer": "a"
   }
  {
-    question: "Who is responsible for writing a program for a computer?",
-    answers: {
+    "question": "Who is responsible for writing a program for a computer?",
+    "answers": {
       a: "Interpreter",
       b: "Programmer",
       c: "Administrator"
     },
-    correctAnswer: "b"
+    "correctAnswer": "b"
   },
   {
-    question: "What was the first successful programming language?",
-    answers: {
+    "question": "What was the first successful programming language?",
+    "answers": {
       a: "COBOL",
       b: "LISP",
       c: "FORTRAN"
     },
-    correctAnswer: "c"
+    "correctAnswer": "c"
   },
   {
-    question: "HTML is a ______ language",
-    answers: {
+    "question": "HTML is a ______ language",
+    "answers": {
       a: "programming",
       b: "markup",
       c: "scripting",
     },
-    correctAnswer: "a"
+    "correctAnswer": "b"
   }
