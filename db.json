@@ -25,3 +25,30 @@
     },
     correctAnswer: "a"
   }
+ {
+    question: "Who is responsible for writing a program for a computer?",
+    answers: {
+      a: "Interpreter",
+      b: "Programmer",
+      c: "Administrator"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What was the first successful programming language?",
+    answers: {
+      a: "COBOL",
+      b: "LISP",
+      c: "FORTRAN"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "HTML is a ______ language",
+    answers: {
+      a: "programming",
+      b: "markup",
+      c: "scripting",
+    },
+    correctAnswer: "a"
+  }
