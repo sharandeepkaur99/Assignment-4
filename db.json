@@ -1,4 +1,3 @@
-const myQuestions = [
   {
     question: "What is the most used programming language?",
     answers: {
@@ -26,4 +25,3 @@ const myQuestions = [
     },
     correctAnswer: "a"
   }
-];
