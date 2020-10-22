@@ -1,4 +1,3 @@
-var [  
 {
     "question": "What is the most used programming language?",
     "answers": {
@@ -53,4 +52,3 @@ var [
     },
     "correctAnswer": "choiceb"
   }
-]
