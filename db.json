@@ -1,4 +1,16 @@
 {
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+<! --
+{
     "question": "What is the most used programming language?",
     "answers": {
       "choicea": "Java",
@@ -52,3 +64,4 @@
     },
     "correctAnswer": "choiceb"
   }
+--!
