@@ -3,16 +3,23 @@
 	"type": "multiple-choice",
 	"q_num": 1,
 	"question": "What is the most used programming language?",
-      	"choicea" : "Java",
-	"choiceb" : "R",
-	"choicec" : "C",
-	"answer" : "choicec",
+	"correct" : "C",
+	"incorrect": [
+		"Java",
+		"Python",
+		"R",
+	]
 	},
 	{
 	"type": "fill-in",
 	"q_num" : 2,
 	"question": "What is a specific set of rules for programming languages called?",
-	"answer" : "syntax",
+	"correct" : "syntax",
+	"incorrect": [
+		"semantics",
+		"rules",
+		"language",
+	]
 	}
 	],
 
@@ -21,16 +28,23 @@
 	"type": "multiple-choice",
 	"q_num" : 1,
 	"question": "Which is not a type of loop in programming?",
-	"choicea" : "while",
-	"choiceb" : "for",
-	"choicec" : "if",
-	"answer" : "choicec",
+	"correct" : "choicec",
+	"incorrect": [
+		"while",
+		"for",
+		"if",
+	]
 	}
     	{
 	"type": "fill-in",
 	"q_num": 2,
 	"question": "Who is responsible for writing a program for a computer?",
-	"answer": "programmer",
+	"correct": "programmer",
+	"incorrect": [
+		"translator",
+		"compiler",
+		"administrator",
+	]
 	},
 	]
 }
