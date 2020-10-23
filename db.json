@@ -1,14 +1,118 @@
 {
-	"Quiz1" :[
-		{
-			"type" : "multiple-choice",
-			"question" : "What is the most used programming language?",
-			"correct" : "C"
-			"incorrect":[
-			"Java",
-			"Python",
-			"R",
-			]
-		},
-		]
+    "Quiz1" :[
+        {
+        "type" : "multiple-choice",
+        "question" : "What is the most used programming language?",
+        "correct-answer" : "C",
+        "incorrect-answer" :
+        [
+            "Java",
+            "Python",
+            "R"
+        ] 
+        },
+        {
+         "type" : "fill-in",
+        "question" : "What is a specific set of rules for programming languages called?",
+        "correct-answer" : "Syntax",
+        "incorrect-answer" :
+        [
+            "Semantics",
+            "Rules",
+            "Dialect"
+        ] 
+        }, 
+        {
+            "type" : "multiple-choice",
+           "question" : "What was the first successful programming language?",
+           "correct-answer" : "FORTRAN",
+           "incorrect-answer" :
+           [
+               "C++",
+               "LISP",
+               "COBOL"
+           ] 
+           }, 
+           {
+            "type" : "fill-in",
+           "question" : "HTML is a ______ language",
+           "correct-answer" : "Markup",
+           "incorrect-answer" :
+           [
+               "Coding",
+               "Programming",
+               "Scripting"
+           ] 
+           }, 
+           {
+            "type" : "multiple-choice",
+           "question" : "There are over ___ programming languages today.",
+           "correct-answer" : "700",
+           "incorrect-answer" :
+           [
+               "700",
+               "800",
+               "900"
+           ] 
+           }
+    ],
+
+    "Quiz2": [
+        {
+        "type" : "multiple-choice",
+        "question" : "Which is not a type of loop in programming?",
+        "correct-answer" : "if",
+        "incorrect-answer" :
+        [
+            "for",
+            "do",
+            "while"
+        ] 
+    },
+    {
+        "type" : "fill-in",
+        "question" : "Who is responsible for writing a program for a computer",
+        "correct-answer" : "Programmer",
+        "incorrect-answer" :
+        [
+            "Translator",
+            "Compiler",
+            "Administrator"
+        ] 
+    },
+
+    {
+        "type" : "multiple-choice",
+        "question" : "What language does Node.js use?",
+        "correct-answer" : "JavaScript",
+        "incorrect-answer" :
+        [
+            "Java",
+            "HTML",
+            "Java Source"
+        ] 
+    },
+    {
+        "type" : "fill-in",
+        "question" : "What does CSS stand for?",
+        "correct-answer" : "Cascading Style Sheet",
+        "incorrect-answer" :
+        [
+            "Computer Styling Sheet",
+            "Corrective Styling Sheet",
+            "Constructive Styling Sheet"
+        ] 
+    },
+    {
+        "type" : "multiple-choice",
+        "question" : "Computers run on ______ code",
+        "correct-answer" : "binary",
+        "incorrect-answer" :
+        [
+            "primary",
+            "language",
+            "decimal"
+        ] 
+    }
+]
 }
