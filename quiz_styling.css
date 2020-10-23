@@ -30,3 +30,8 @@ input[type=text] {
    margin: 6px 0;
    box-sizing: border-box;
 }
+
+label {
+  background color: lightgrey;
+  color: black;
+}
