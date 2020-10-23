@@ -1,8 +1,12 @@
 {
-  "posts": [
+  "questions": [
     {
       "id": 1,
-      "title": "hello"
+      "question1": "What is the most used programming language?"
+      "choicea": "Java",
+      "choiceb": "R",
+      "choicec": "C"
+      "correctAnswer": "choicec"
     }
   ],
   "profile": {
