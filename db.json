@@ -108,16 +108,6 @@
             "JavaScript"
         ] 
         },
-        {
-            "type" : "true-false",
-           "question_num": 10,
-           "question" : "Most programming languages today are high-level languages.",
-           "correct-answer" : "True",
-           "incorrect-answer" :
-           [
-               "False"
-           ] 
-           }, 
            {
             "type" : "fill-in",
             "question_num": 11,
