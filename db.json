@@ -120,7 +120,7 @@
            "question" : "There are over ___ programming languages today.",
            "choicea" : "700",
            "choiceb" : "800",
-           "choicec" : "900"
+           "choicec" : "900",
            "correct-answer" : "choicea"
            }
     ],
