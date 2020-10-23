@@ -39,8 +39,8 @@
            "correct-answer" : "Markup",
            "incorrect-answer" :
            [
-               "Coding",
-               "Programming",
+               "High",
+               "Compiling",
                "Scripting"
            ] 
            }, 
@@ -151,6 +151,17 @@
         ] 
         }, 
         {
+        "type" : "fill-in",
+        "question" : "What does CSS stand for?",
+        "correct-answer" : "Cascading Style Sheet",
+        "incorrect-answer" :
+        [
+            "Computer Styling Sheet",
+            "Corrective Styling Sheet",
+            "Constructive Styling Sheet"
+        ] 
+        },
+        {
             "type" : "multiple-choice",
            "question" : "Who is known as the first computer programmer?",
            "correct-answer" : "Ada Lovelace",
@@ -161,6 +172,28 @@
                "Daniel Byron"
            ] 
            }, 
+        {
+             "type" : "fill-in",
+            "question" : "What does CSS stand for?",
+            "correct-answer" : "Cascading Style Sheet",
+            "incorrect-answer" :
+            [
+                "Computer Styling Sheet",
+                "Corrective Styling Sheet",
+                "Constructive Styling Sheet"
+            ] 
+            },
+        {
+             "type" : "multiple-choice",
+             "question" : "What language does Node.js use?",
+             "correct-answer" : "JavaScript",
+             "incorrect-answer" :
+            [
+                "Java",
+                "HTML",
+                "Java Source"
+            ] 
+        },
            {
             "type" : "true-false",
            "question" : "Majority projects use only one programming language",
@@ -183,6 +216,14 @@
            }
     ],
 
+    
+    
+    
+    
+    
+    
+    
+    
     "Quiz2": [
         {
         "type" : "multiple-choice",
@@ -227,6 +268,71 @@
             "Computer Styling Sheet",
             "Corrective Styling Sheet",
             "Constructive Styling Sheet"
+        ] 
+    },
+    {
+        "type" : "multiple-choice",
+        "question" : "Computers run on ______ code",
+        "correct-answer" : "binary",
+        "incorrect-answer" :
+        [
+            "primary",
+            "language",
+            "decimal"
+        ] 
+    },
+    {
+        "type" : "fill-in",
+        "question" : "Python is a ______ language",
+        "correct-answer" : "Scripting",
+        "incorrect-answer" :
+        [
+            "Markup",
+            "Compiling",
+            "Random"
+        ] 
+    },
+        {
+        "type" : "multiple-choice",
+        "question" : "Which of the following is used for web development?",
+        "correct-answer" : "JavaScript",
+        "incorrect-answer" :
+        [
+            "Python",
+            "R",
+            "C++"
+        ] 
+    },
+    {
+        "type" : "true-false",
+        "question" : "The first ever computer virus was meant to be malicious.",
+        "correct-answer" : "False",
+        "incorrect-answer" :
+        [
+            "True"
+        ] 
+    },
+
+    {
+        "type" : "multiple-choice",
+        "question" : "What was the earliest programmable computer?",
+        "correct-answer" : "The Analytical Engine",
+        "incorrect-answer" :
+        [
+            "The Internet",
+            "FORTRAN",
+            "Java Analytics"
+        ] 
+    },
+    {
+        "type" : "fill-in",
+        "question" : "What does OOP stand for?",
+        "correct-answer" : "Object Oriented Programming",
+        "incorrect-answer" :
+        [
+            "On Object Programming",
+            "Object or Programming",
+            "Objective Object Programming"
         ] 
     },
     {
