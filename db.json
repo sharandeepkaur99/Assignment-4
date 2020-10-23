@@ -181,7 +181,6 @@
            "choiceb" : "800",
            "choicec" : "900"
            "correct-answer" : "choicea",
-           }
         },
            {
             "type" : "true-false",
@@ -199,13 +198,10 @@
         {
         "type" : "multiple-choice",
         "question" : "Which of the following is used for web development?",
-        "correct-answer" : "JavaScript",
-        "incorrect-answer" :
-        [
-            "Python",
-            "R",
-            "C++"
-        ] 
+        "choicea" : "Python",
+        "choiceb" : "R",
+        "choicec" : "JavaScript"
+        "correct-answer" : "choicec",
     },
     {
         "type" : "true-false",
@@ -229,7 +225,6 @@
         "choicea" : "FORTRAN",
         "choicea" : "The Analytical Engine",
         "correct-answer" : "choicec"
-        ] 
     },
     {
         "type" : "fill-in",
