@@ -44,6 +44,50 @@
                "Scripting"
            ] 
            }, 
+        {
+        "type" : "multiple-choice",
+        "question" : "Which of the following is not a programming language?",
+        "correct-answer" : "RAM",
+        "incorrect-answer" :
+        [
+            "Ruby on Rails",
+            "PHP",
+            "Python"
+        ] 
+        },
+        {
+         "type" : "fill-in",
+        "question" : "HTML stands for?",
+        "correct-answer" : "HyperText Markup Language",
+        "incorrect-answer" :
+        [
+            "HyperText Main Language",
+            "HighTech Markup Language",
+            "HighTech Main Language"
+        ] 
+        }, 
+        {
+            "type" : "multiple-choice",
+           "question" : "Which is not a level of coding?",
+           "correct-answer" : "Medium",
+           "incorrect-answer" :
+           [
+               "High",
+               "Low",
+               "All of the above"
+           ] 
+           }, 
+           {
+            "type" : "fill-in",
+           "question" : "C is a ____ level language",
+           "correct-answer" : "Low",
+           "incorrect-answer" :
+           [
+               "High",
+               "Medium",
+               "Web"
+           ] 
+           },
            {
             "type" : "multiple-choice",
            "question" : "There are over ___ programming languages today.",
