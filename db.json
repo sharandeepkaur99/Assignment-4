@@ -18,7 +18,7 @@
            "question" : "What was the first successful programming language?",
            "choicea" : "FORTRAN",
            "choiceb" : "LISP",
-           "choicec" "COBOL",
+           "choicec" : "COBOL",
            "correct-answer" : "choicea"
            }, 
         {
@@ -93,7 +93,7 @@
            "choicea" : "Ada Lovelace",
            "choiceb" : "Bill Gates",
            "choicec" : "Charles Babbage"
-           "correct-answer" : "choicea",
+           "correct-answer" : "choicea"
            }, 
         {
              "type" : "fill-in",
@@ -113,7 +113,7 @@
            "question" : "Majority projects use only one programming language",
            "choicea" : "True",
            "choiceb" : "False",
-           "correct-answer" : "choiceb",
+           "correct-answer" : "choiceb"
            },
            {
             "type" : "multiple-choice",
@@ -121,7 +121,7 @@
            "choicea" : "700",
            "choiceb" : "800",
            "choicec" : "900"
-           "correct-answer" : "choicea",
+           "correct-answer" : "choicea"
            }
     ],
 
