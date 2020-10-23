@@ -1,55 +1,15 @@
 {
-	"quiz_1":[
-{
-	"type": "multiple-choice",
-	"q_num": 1,
-	"question": "What is the most used programming language?",
-	"correct" : "C",
-	"incorrect": 
-	[
-		"Java",
-		"Python",
-		"R",
-	]
-	},
-	{
-	"type": "fill-in",
-	"q_num" : 2,
-	"question": "What is a specific set of rules for programming languages called?",
-	"correct" : "syntax",
-	"incorrect":
-	[
-		"semantics",
-		"rules",
-		"language",
-	]
-	}
-	],
-
-"quiz_2":[
-{
-	"type": "multiple-choice",
-	"q_num" : 1,
-	"question": "Which is not a type of loop in programming?",
-	"correct" : "choicec",
-	"incorrect": 
-	[
-		"while",
-		"for",
-		"if",
-	]
-	}
-    	{
-	"type": "fill-in",
-	"q_num": 2,
-	"question": "Who is responsible for writing a program for a computer?",
-	"correct": "programmer",
-	"incorrect": 
-	[
-		"translator",
-		"compiler",
-		"administrator",
-	]
-	},
-	]
+	"Quiz1" :[
+		{
+			"type" : "multiple-choice",
+			"question" : "What is the most used programming language?",
+			"correct" : "C"
+			"incorrect" :
+			[
+			"Java",
+			"Python",
+			"R",
+			]
+		},
+		]
 }
