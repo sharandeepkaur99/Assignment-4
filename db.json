@@ -88,6 +88,88 @@
                "Web"
            ] 
            },
+        {
+        "type" : "multiple-choice",
+        "question" : "Which of the following is not used for web development?",
+        "correct-answer" : "R",
+        "incorrect-answer" :
+        [
+            "PHP",
+            "HTML",
+            "JavaScript"
+        ] 
+        },
+        {
+         "type" : "fill-in",
+        "question" : "Most programming languages are _____ level languages",
+        "correct-answer" : "High",
+        "incorrect-answer" :
+        [
+            "Medium",
+            "Low",
+            "Beginner"
+        ] 
+        }, 
+        {
+            "type" : "true-false",
+           "question" : "Most programming languages today are high-level languages.",
+           "correct-answer" : "True",
+           "incorrect-answer" :
+           [
+               "False"
+           ] 
+           }, 
+           {
+            "type" : "fill-in",
+           "question" : "Which type of language is easier to code in?",
+           "correct-answer" : "High-level",
+           "incorrect-answer" :
+           [
+               "Low-Level",
+               "Basic",
+               "Binary"
+           ] 
+           }, 
+        {
+        "type" : "multiple-choice",
+        "question" : "Which language focuses on the visual appeal of a webpage?",
+        "correct-answer" : "CSS",
+        "incorrect-answer" :
+        [
+            "HTML",
+            "JavaScript",
+            "Python"
+        ] 
+        },
+        {
+         "type" : "true-false",
+        "question" : "Once you learn how to code in one language, it is easier to learn others due to the similar features.",
+        "correct-answer" : "True",
+        "incorrect-answer" :
+        [
+            "False"
+        ] 
+        }, 
+        {
+            "type" : "multiple-choice",
+           "question" : "Who is known as the first computer programmer?",
+           "correct-answer" : "Ada Lovelace",
+           "incorrect-answer" :
+           [
+               "Charles Babbage",
+               "Bill Gates",
+               "Daniel Byron"
+           ] 
+           }, 
+           {
+            "type" : "true-false",
+           "question" : "Majority projects use only one programming language",
+           "correct-answer" : "False",
+           "incorrect-answer" :
+           [
+               "True"
+           ] 
+           },
            {
             "type" : "multiple-choice",
            "question" : "There are over ___ programming languages today.",
