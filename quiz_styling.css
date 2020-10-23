@@ -4,9 +4,9 @@
 }
 
 h1 {
-  background-color: babyblue;
+  background-color: lavender;
   text-align: center;
-  color: darkblue;
+  color: lightpink;
 }
 
 h2 {
@@ -30,4 +30,3 @@ input[type=text] {
    margin: 6px 0;
    box-sizing: border-box;
 }
-  
