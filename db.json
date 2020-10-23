@@ -57,7 +57,7 @@
         "question" : "Which of the following is not used for web development?",
         "choicea" : "PHP",
         "choiceb" : "R",
-        "choicec" : "JavaScript"
+        "choicec" : "JavaScript",
         "correct-answer" : "choiceb"
         },
         {
@@ -92,7 +92,7 @@
            "question" : "Who is known as the first computer programmer?",
            "choicea" : "Ada Lovelace",
            "choiceb" : "Bill Gates",
-           "choicec" : "Charles Babbage"
+           "choicec" : "Charles Babbage",
            "correct-answer" : "choicea"
            }, 
         {
@@ -215,7 +215,7 @@
            "question" : "What was the first successful programming language?",
            "choicea" : "FORTRAN",
            "choiceb" : "LISP",
-           "choicec" "COBOL",
+           "choicec" : "COBOL",
            "correct-answer" : "choicea"
     }, 
     {
@@ -236,7 +236,7 @@
            "question" : "Who is known as the first computer programmer?",
            "choicea" : "Ada Lovelace",
            "choiceb" : "Bill Gates",
-           "choicec" : "Charles Babbage"
+           "choicec" : "Charles Babbage",
            "correct-answer" : "choicea"
     }
 ]
