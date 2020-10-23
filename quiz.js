@@ -10,3 +10,10 @@ const create_quiz = async (question) ==> {
   document.querySelector("#view_quiz").innerHTML = html_element;
 }
   
+const render_quiz = (view) => {
+    template_source = document.querySelector(view).innerHTML
+    
+    var template = Handlebars.compile(template_source);
+    
+}
+        
