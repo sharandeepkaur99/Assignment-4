@@ -18,72 +18,97 @@
  
 <body>
   
-  <h1>Online Quiz App</h1>
 
- <form>                             
-    <div>
-      <label for="name">Please enter your name:</label><br>
-      <input type="text" id="name" name="name">
- </form>    
-   
-   </div> 
-  
-  
-   <div class="btn-group btn-group-justified">
-     <p> Please select one of the following quizzes: </p>                                          
-    <a href="#quiz1" class="btn btn-basic">Quiz 1</a><br
-    <a href="#quiz2" class="btn btn-basic">Quiz 2</a>
-     <button onclick "fetch_questions"> </button>
-    
-  </div>
-  
-  </div>
-      <div id="view_quiz">
+  <div id="view_widget" class="text-center">
   </div>
   
   
   
 </body>
 
-async function fetch_questions() {
-  try {
- 
-    const response = await fetch('https://my-json-server.typicode.com/sharandeepkaur99/Assignment-4')
-    
-    const result = await response.json()
-    console.log(result);
-  } catch (err) {
-    console.error(err);
-  }
-}
+<script id="begin" type="text/x-handlebars-template">
+    <h1 class="text-center">Online Programming Quiz!</h1>
+    <form id="quiz-select" class="text-center">
+        <label for="name">Enter Your Name:</label>
+        <input id="name" autocomplete="off" placeholder="Name" type="text" required>
+        <h4>Select a Quiz</h4>
+        <label for="quiz1">Quiz 1</label>
+        <input type="radio" id="quiz1" name="quiz" value="quiz1" required>
+        <label for="quiz2">Quiz 2</label>
+        <input type="radio" id="quiz2" name="quiz" value="quiz2" required>
+        <input id="start-quiz" type="submit" value="Start Quiz!">
+    </form>
+</script>
 
+<script id="quiz-view" type="text/x-handlebars-template">
+    <h3 class="text-center">Score: {{this.correct}} / {{this.total}}</h3>
+    <div id="question-view" class="text-center">
 
-
-
-
-<!-- the views -->
-  <script id="quiz1" type="text/x-handlebars-template">
-  <h4> Quiz 1 </h4>
-    <div class="container">
-    <div class="row".
-    <div class="col">
-    <div class="card" style="width:200px">
-      <h4 class="test">{{question}}</h4>
-      <p class="card-text">{{answer}}</p>
-      <a href="#quiz1" class="btn btn-primary">Quiz 1</a>
     </div>
-  </script>
+</script>
 
-
-  <script id="quiz2" type="text/x-handlebars-template">
-    <div class="test">
-      <h4 class="test" style="color:red;">{{question}}</h4>
-      <p class="card-text">{{expertise}}</p>
-      <a href="{{profile}}" class="btn btn-primary">See Profile</a>
+<script id="blank-question" type="text/x-handlebars-template">
+    <h1 class="text-center">Question: {{this.current_question}}</h1>
+    <h3 class="text-center">Please fill in the blank with the correct answer.</h3>
+    <form id="t-answer-form" class="text-center" onsubmit="check_answer('Blank'); return false;">
+        <label for="answer">{{question_1}}</label>
+        <input id="answer" autocomplete="off" placeholder="Type your answer" type="text" required>
+        <label for="answer">{{question_2}}</label>
+        <input id="submit-answer" type="Submit" value="Submit">
+    </form>
+    <div id="result" class="text-center">
     </div>
-  </script>
+</script>
 </html>
 
+<script id="mc-question" type="text/x-handlebars-template">
+    <h1 class="text-center">Question: {{this.current_question}}</h1>
+    <h3 class="text-center">{{question}}</h3>
+    <form id="t-answer-form" onsubmit="check_answer('MC'); return false;">
+        <p>Select one answer:</p>
+        <input id="choice1" type="radio" name="choice" value="Choice1" required>
+        <label for="choice1">{{choice1}}</label>
+        <br>
+        <input id="choice2" type="radio" name="choice" value="Choice2" required>
+        <label for="choice2">{{choice2}}</label>
+        <br>
+        <input id="choice3" type="radio" name="choice" value="Choice3" required>
+        <label for="choice3">{{choice3}}</label>
+        <br>
+        <input id="submit-answer" type="Submit" value="Submit">
+    </form>
+    <div id="result" class="text-center">
+    </div>
+</script>
 
-</html>
+<script id="explanation" type="text/x-handlebars-template">
+    <h3 class="text-center">That is incorrect!</h3>
+    <p class="text-center">{{explanation}}</p>
+    <form id="wrong-answer" class="text-center" onsubmit="load_quiz_view(); return false;">
+        <input id="got-it" type="Submit" value="Got it!">
+    </form>
+</script>
+
+<script id="right" type="text/x-handlebars-template">
+    <h2 class="text-center">That is correct!</h2>
+</script>
+
+<script id="passed" type="text/x-handlebars-template">
+    <h1 class="text-center">Congratulationss {{name}}!  You successfully passed the quiz!</h1>
+    <h2 class="text-center">You scored: {{correct}}/{{total}} ({{score}})</h2>
+    <form id="home" class="text-center" onsubmit="reload()">
+        <input id="return" type="Submit" value="Go Home">
+    </form>
+</script>
+
+<script id="failed" type="text/x-handlebars-template">
+    <h1 class="text-center">Sorry {{name}},  unfortunately you were not able to pass the quiz.</h1>
+    <h2 class="text-center">Your scored: {{correct}}/{{total}} ({{score}})</h2>
+    <form id="home" class="text-center" onsubmit="reload()">
+        <input id="return" type="Submit" value="Go Home">
+    </form>
+</script>
+
+
+
           
