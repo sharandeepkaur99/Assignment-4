@@ -61,18 +61,6 @@
         ] 
         },
         {
-         "type" : "fill-in",
-         "question_num": 6,
-        "question" : "HTML stands for?",
-        "correct-answer" : "HyperText Markup Language",
-        "incorrect-answer" :
-        [
-            "HyperText Main Language",
-            "HighTech Markup Language",
-            "HighTech Main Language"
-        ] 
-        }, 
-        {
             "type" : "multiple-choice",
             "question_num": 7,
            "question" : "Which is not a level of coding?",
