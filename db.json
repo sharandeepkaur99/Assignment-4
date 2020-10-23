@@ -1,15 +1,37 @@
-{
-  "questions": [
-    {
-      "id": q1,
-      "question1": "What is the most used programming language?"
-      "choicea": "Java",
-      "choiceb": "R",
-      "choicec": "C"
-      "correctAnswer": "choicec"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+	"Quiz_1": [
+		{
+			"type": "multiple-choice",
+			"q_num": 1,
+			"question": "What is the most used programming language?",
+      "choice1" : "Java",
+			"choice2" : "R",
+			"choicec" : "C",
+			"answer" : "choicec",
+		},
+		{
+			"type": "fill-in",
+			"q_num" : 2,
+			"question": "What is a specific set of rules for programming languages called?",
+			"answer" : "syntax",
+		}
+	],
+
+
+	"Quiz_2": [
+		{
+			"type": "multiple-choice",
+			"q_num" : 1,
+			"question": "Which is not a type of loop in programming?",
+			"choicea" : "while",
+			"choiceb" : "for",
+			"choicec" : "if",
+			"answer" : "choicec",
+		}
+    		{
+			"type": "fill-in",
+			"q_num": 2,
+			"question": "Who is responsible for writing a program for a computer?",
+			"answer": "programmer",
+		},
+	]
 }
