@@ -293,6 +293,26 @@
         ] 
     },
     {
+             "type" : "multiple-choice",
+             "question" : "What language does Node.js use?",
+             "correct-answer" : "JavaScript",
+             "incorrect-answer" :
+            [
+                "Java",
+                "HTML",
+                "Java Source"
+            ] 
+        },
+           {
+            "type" : "true-false",
+           "question" : "Majority projects use only one programming language",
+           "correct-answer" : "False",
+           "incorrect-answer" :
+           [
+               "True"
+           ] 
+           },
+    {
             "type" : "multiple-choice",
            "question" : "There are over ___ programming languages today.",
            "correct-answer" : "700",
