@@ -292,19 +292,6 @@
                "True"
            ] 
            },
-    {
-            "type" : "multiple-choice",
-           "question_num": 9,
-           "question" : "There are over ___ programming languages today.",
-           "correct-answer" : "700",
-           "incorrect-answer" :
-           [
-               "700",
-               "800",
-               "900"
-           ] 
-     },
-
         {
          "type" : "fill-in",
          "question_num": 10,
