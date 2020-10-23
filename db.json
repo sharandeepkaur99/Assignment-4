@@ -292,6 +292,28 @@
             "Random"
         ] 
     },
+    {
+            "type" : "multiple-choice",
+           "question" : "There are over ___ programming languages today.",
+           "correct-answer" : "700",
+           "incorrect-answer" :
+           [
+               "700",
+               "800",
+               "900"
+           ] 
+     },
+        {
+         "type" : "fill-in",
+        "question" : "HTML stands for?",
+        "correct-answer" : "HyperText Markup Language",
+        "incorrect-answer" :
+        [
+            "HyperText Main Language",
+            "HighTech Markup Language",
+            "HighTech Main Language"
+        ] 
+        }, 
         {
         "type" : "multiple-choice",
         "question" : "Which of the following is used for web development?",
@@ -312,7 +334,17 @@
             "True"
         ] 
     },
-
+    {
+            "type" : "multiple-choice",
+           "question" : "What was the first successful programming language?",
+           "correct-answer" : "FORTRAN",
+           "incorrect-answer" :
+           [
+               "C++",
+               "LISP",
+               "COBOL"
+           ] 
+    }, 
     {
         "type" : "multiple-choice",
         "question" : "What was the earliest programmable computer?",
