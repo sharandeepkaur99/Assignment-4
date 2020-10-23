@@ -2,6 +2,7 @@
     "Quiz1" :[
         {
         "type" : "multiple-choice",
+        "question_num": 1,
         "question" : "What is the most used programming language?",
         "correct-answer" : "C",
         "incorrect-answer" :
@@ -13,6 +14,7 @@
         },
         {
          "type" : "fill-in",
+         "question_num": 2,
         "question" : "What is a specific set of rules for programming languages called?",
         "correct-answer" : "Syntax",
         "incorrect-answer" :
@@ -24,6 +26,7 @@
         }, 
         {
             "type" : "multiple-choice",
+            "question_num": 3,
            "question" : "What was the first successful programming language?",
            "correct-answer" : "FORTRAN",
            "incorrect-answer" :
@@ -35,6 +38,7 @@
            }, 
            {
             "type" : "fill-in",
+            "question_num": 4,
            "question" : "HTML is a ______ language",
            "correct-answer" : "Markup",
            "incorrect-answer" :
@@ -46,6 +50,7 @@
            }, 
         {
         "type" : "multiple-choice",
+        "question_num": 5,
         "question" : "Which of the following is not a programming language?",
         "correct-answer" : "RAM",
         "incorrect-answer" :
@@ -57,6 +62,7 @@
         },
         {
          "type" : "fill-in",
+         "question_num": 6,
         "question" : "HTML stands for?",
         "correct-answer" : "HyperText Markup Language",
         "incorrect-answer" :
@@ -68,6 +74,7 @@
         }, 
         {
             "type" : "multiple-choice",
+            "question_num": 7,
            "question" : "Which is not a level of coding?",
            "correct-answer" : "Medium",
            "incorrect-answer" :
@@ -79,6 +86,7 @@
            }, 
            {
             "type" : "fill-in",
+            "question_num": 8,
            "question" : "C is a ____ level language",
            "correct-answer" : "Low",
            "incorrect-answer" :
@@ -90,6 +98,7 @@
            },
         {
         "type" : "multiple-choice",
+        "question_num": 9,
         "question" : "Which of the following is not used for web development?",
         "correct-answer" : "R",
         "incorrect-answer" :
@@ -101,6 +110,7 @@
         },
         {
             "type" : "true-false",
+           "question_num": 10,
            "question" : "Most programming languages today are high-level languages.",
            "correct-answer" : "True",
            "incorrect-answer" :
@@ -110,6 +120,7 @@
            }, 
            {
             "type" : "fill-in",
+            "question_num": 11,
            "question" : "Which type of language is easier to code in?",
            "correct-answer" : "High-level",
            "incorrect-answer" :
@@ -121,6 +132,7 @@
            }, 
         {
         "type" : "multiple-choice",
+        "question_num": 12,
         "question" : "Which language focuses on the visual appeal of a webpage?",
         "correct-answer" : "CSS",
         "incorrect-answer" :
@@ -132,6 +144,7 @@
         },
         {
          "type" : "true-false",
+         "question_num": 13,
         "question" : "Once you learn how to code in one language, it is easier to learn others due to the similar features.",
         "correct-answer" : "True",
         "incorrect-answer" :
@@ -141,6 +154,7 @@
         }, 
         {
             "type" : "multiple-choice",
+            "question_num": 14,
            "question" : "Who is known as the first computer programmer?",
            "correct-answer" : "Ada Lovelace",
            "incorrect-answer" :
@@ -152,6 +166,7 @@
            }, 
         {
              "type" : "fill-in",
+            "question_num": 15,
             "question" : "What does CSS stand for?",
             "correct-answer" : "Cascading Style Sheet",
             "incorrect-answer" :
@@ -163,6 +178,7 @@
             },
         {
              "type" : "multiple-choice",
+            "question_num": 16,
              "question" : "What language does Node.js use?",
              "correct-answer" : "JavaScript",
              "incorrect-answer" :
@@ -174,6 +190,7 @@
         },
            {
             "type" : "true-false",
+            "question_num": 17,
            "question" : "Majority projects use only one programming language",
            "correct-answer" : "False",
            "incorrect-answer" :
@@ -183,6 +200,7 @@
            },
            {
             "type" : "multiple-choice",
+            "question_num": 18,
            "question" : "There are over ___ programming languages today.",
            "correct-answer" : "700",
            "incorrect-answer" :
@@ -204,6 +222,7 @@
     "Quiz2": [
         {
         "type" : "multiple-choice",
+        "question_num": 1,
         "question" : "Which is not a type of loop in programming?",
         "correct-answer" : "if",
         "incorrect-answer" :
@@ -215,6 +234,7 @@
     },
     {
         "type" : "fill-in",
+        "question_num": 2,
         "question" : "Who is responsible for writing a program for a computer",
         "correct-answer" : "Programmer",
         "incorrect-answer" :
@@ -226,6 +246,7 @@
     },
     {
         "type" : "multiple-choice",
+        "question_num": 3,
         "question" : "What language does Node.js use?",
         "correct-answer" : "JavaScript",
         "incorrect-answer" :
@@ -237,6 +258,7 @@
     },
     {
         "type" : "fill-in",
+        "question_num": 4,
         "question" : "What does CSS stand for?",
         "correct-answer" : "Cascading Style Sheet",
         "incorrect-answer" :
@@ -248,6 +270,7 @@
     },
     {
         "type" : "multiple-choice",
+        "question_num": 5,
         "question" : "Computers run on ______ code",
         "correct-answer" : "binary",
         "incorrect-answer" :
@@ -259,6 +282,7 @@
     },
     {
         "type" : "fill-in",
+        "question_num": 6,
         "question" : "Python is a ______ language",
         "correct-answer" : "Scripting",
         "incorrect-answer" :
@@ -270,6 +294,7 @@
     },
     {
              "type" : "multiple-choice",
+             "question_num": 7,
              "question" : "What language does Node.js use?",
              "correct-answer" : "JavaScript",
              "incorrect-answer" :
@@ -281,6 +306,7 @@
         },
            {
             "type" : "true-false",
+            "question_num": 8,
            "question" : "Majority projects use only one programming language",
            "correct-answer" : "False",
            "incorrect-answer" :
@@ -290,6 +316,7 @@
            },
     {
             "type" : "multiple-choice",
+           "question_num": 9,
            "question" : "There are over ___ programming languages today.",
            "correct-answer" : "700",
            "incorrect-answer" :
@@ -302,6 +329,7 @@
 
         {
          "type" : "fill-in",
+         "question_num": 10,
         "question" : "HTML stands for?",
         "correct-answer" : "HyperText Markup Language",
         "incorrect-answer" :
@@ -313,6 +341,7 @@
         }, 
         {
         "type" : "multiple-choice",
+        "question_num": 11,
         "question" : "Which of the following is used for web development?",
         "correct-answer" : "JavaScript",
         "incorrect-answer" :
@@ -324,6 +353,7 @@
     },
     {
         "type" : "true-false",
+        "question_num": 12,
         "question" : "The first ever computer virus was meant to be malicious.",
         "correct-answer" : "False",
         "incorrect-answer" :
@@ -333,6 +363,7 @@
     },
     {
             "type" : "multiple-choice",
+            "question_num": 13,
            "question" : "What was the first successful programming language?",
            "correct-answer" : "FORTRAN",
            "incorrect-answer" :
@@ -344,6 +375,7 @@
     }, 
     {
         "type" : "multiple-choice",
+        "question_num": 14,
         "question" : "What was the earliest programmable computer?",
         "correct-answer" : "The Analytical Engine",
         "incorrect-answer" :
@@ -355,6 +387,7 @@
     },
     {
         "type" : "fill-in",
+        "question_num": 15,
         "question" : "What does OOP stand for?",
         "correct-answer" : "Object Oriented Programming",
         "incorrect-answer" :
@@ -366,6 +399,7 @@
     },
     {
         "type" : "multiple-choice",
+        "question_num": 16,
         "question" : "Computers run on ______ code",
         "correct-answer" : "binary",
         "incorrect-answer" :
