@@ -100,17 +100,6 @@
         ] 
         },
         {
-         "type" : "fill-in",
-        "question" : "Most programming languages are _____ level languages",
-        "correct-answer" : "High",
-        "incorrect-answer" :
-        [
-            "Medium",
-            "Low",
-            "Beginner"
-        ] 
-        }, 
-        {
             "type" : "true-false",
            "question" : "Most programming languages today are high-level languages.",
            "correct-answer" : "True",
@@ -150,17 +139,6 @@
             "False"
         ] 
         }, 
-        {
-        "type" : "fill-in",
-        "question" : "What does CSS stand for?",
-        "correct-answer" : "Cascading Style Sheet",
-        "incorrect-answer" :
-        [
-            "Computer Styling Sheet",
-            "Corrective Styling Sheet",
-            "Constructive Styling Sheet"
-        ] 
-        },
         {
             "type" : "multiple-choice",
            "question" : "Who is known as the first computer programmer?",
