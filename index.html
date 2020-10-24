@@ -17,7 +17,17 @@
 </head>
  
 <body>
-  
+  <h1> Online Quiz </h1>
+  <form id="quiz-select" class="text-center">
+        <label for="name">Please enter Your Name:</label>
+        <input id="name" autocomplete="off" placeholder="Name" type="text" required>
+        <h4>Select a Quiz To Take</h4>
+        <label for="quiz1">Quiz 1</label>
+        <input type="radio" id="quiz1" name="quiz" value="quiz1" required>
+        <label for="quiz2">Quiz 2</label>
+        <input type="radio" id="quiz2" name="quiz" value="quiz2" required>
+        <input id="start-quiz" type="submit" value="Start Quiz!">
+    </form>
 
   <div id="view_widget" class="text-center">
   </div>
