@@ -44,30 +44,30 @@ async function load_question()
         finish_quiz();
     }
     const question = await get_quiz_info(appState.quiz_num, appState.question_num);
-    if (question["Type"] === "MC")
+    if (question["type"] === "multiple-choice")
     {
         let vars = {
-            current_question: question["Question_Num"],
-            question: question["Question"],
+            current_question: question["question_num"],
+            question: question["question"],
             choice1: question["Choice1"],
             choice2: question["Choice2"],
             choice3: question["Choice3"]
         }
-        load_view('#sc-question', '#question-view', vars)
+        load_view('#multiple-choice-question', '#question-view', vars)
     }
-    else if (question["Type"] === "Blank")
+    else if (question["type"] === "fill-in")
     {
         let vars = {
-            current_question: question["Question_Num"],
-            question_1: question["Question_1"],
+            current_question: question["question_num"],
+            question_1: question["question"],
         }
         load_view('#blank-question', '#question-view', vars)
     }
-    else if (question["Type"] === "TF")
+    else if (question["type"] === "true-false")
     {
         let vars = {
-            current_question: question["Question_Num"],
-            question: question["Question"]
+            current_question: question["question_num"],
+            question: question["question"]
         }
         load_view('#tf-question', '#question-view', vars)
     }
@@ -78,7 +78,7 @@ async function check_answer(q_type)
 {
     const question = await get_quiz_info(appState.quiz_num, appState.question_num);
 
-    if (q_type === 'MC')
+    if (q_type === 'multiple-choice')
     {
         var answer;
         let temp = document.getElementsByName('choice')
@@ -89,7 +89,7 @@ async function check_answer(q_type)
                  answer = temp[i].value;
             }
         }
-        if (answer === question["Answer"])
+        if (answer === question["correct_answer"])
         {
             correct();
         }
@@ -98,7 +98,7 @@ async function check_answer(q_type)
             wrong();
         }
     }
-    else if (q_type === 'TF')
+    else if (q_type === 'true-false')
     {
         var answer;
         let temp = document.getElementsByName('choice')
@@ -109,7 +109,7 @@ async function check_answer(q_type)
                 answer = temp[i].value;
             }
         }
-        if (answer === question["Answer"])
+        if (answer === question["correct_answer"])
         {
             correct();
         }
@@ -118,10 +118,10 @@ async function check_answer(q_type)
             wrong();
         }
     }
-    else if (q_type === 'Blank')
+    else if (q_type === 'fill-in')
     {
         let user_answer = document.querySelector('#answer').value;
-        if (user_answer.toUpperCase() === question["Answer"].toUpperCase())
+        if (user_answer.toUpperCase() === question["correct_answer"].toUpperCase())
         {
             correct();
         }
