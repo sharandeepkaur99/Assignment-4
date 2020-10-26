@@ -1,378 +1,278 @@
 {
-    "Quiz1" :[
+	"Quiz1": [
+		{
+			"Type": "Blank",
+			"Question_Num": 1,
+			"Question_1": "RAM stands for: ",
+			"Answer": "Random Access Memory",
+			"Explanation": "RAM stands for Random Access Memory"
+		},
         {
-        "type" : "multiple-choice",
-        "question_num": 1,
-        "question" : "What is the most used programming language?",
-        "correct-answer" : "C",
-        "incorrect-answer" :
-        [
-            "Java",
-            "Python",
-            "R"
-        ] 
-        },
+			"Type": "Blank",
+			"Question_Num": 1,
+			"Question_1": "HTML is a _____ language ",
+			"Answer": "markup",
+			"Explanation": "HTML is a markup language (HyperText MarkUp Language)"
+		},
         {
-         "type" : "fill-in",
-         "question_num": 2,
-        "question" : "What is a specific set of rules for programming languages called?",
-        "correct-answer" : "Syntax",
-        "incorrect-answer" :
-        [
-            "Semantics",
-            "Rules",
-            "Dialect"
-        ] 
-        }, 
+			"Type": "Blank",
+			"Question_Num": 1,
+			"Question_1": "C is a ____ level language. ",
+			"Answer": "low",
+			"Explanation": "C is a low level language."
+		},
         {
-            "type" : "multiple-choice",
-            "question_num": 3,
-           "question" : "What was the first successful programming language?",
-           "correct-answer" : "FORTRAN",
-           "incorrect-answer" :
-           [
-               "C++",
-               "LISP",
-               "COBOL"
-           ] 
-           }, 
-           {
-            "type" : "fill-in",
-            "question_num": 4,
-           "question" : "HTML is a ______ language",
-           "correct-answer" : "Markup",
-           "incorrect-answer" :
-           [
-               "High",
-               "Compiling",
-               "Scripting"
-           ] 
-           }, 
+			"Type": "Blank",
+			"Question_Num": 1,
+			"Question_1": "Which type of language is easier to code in?",
+			"Answer": "High-Level",
+			"Explanation": "High-level languages are easier to code in."
+		},
         {
-        "type" : "multiple-choice",
-        "question_num": 5,
-        "question" : "Which of the following is not a programming language?",
-        "correct-answer" : "RAM",
-        "incorrect-answer" :
-        [
-            "Ruby on Rails",
-            "PHP",
-            "Python"
-        ] 
-        },
+			"Type": "Blank",
+			"Question_Num": 1,
+			"Question_1": "What does CSS stand for? ",
+			"Answer": "Cascading Style Sheets",
+			"Explanation": "CSS stands for Cascading Style Sheets."
+		},
+		{
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "What is the most used programming language?",
+			"Choice1" : "Java",
+			"Choice2" : "Python",
+			"Choice3" : "C",
+			"Answer": "Choice3",
+			"Explanation": "C is the most used programming language today."
+		},
         {
-            "type" : "multiple-choice",
-            "question_num": 7,
-           "question" : "Which is not a level of coding?",
-           "correct-answer" : "Medium",
-           "incorrect-answer" :
-           [
-               "High",
-               "Low",
-               "All of the above"
-           ] 
-           }, 
-           {
-            "type" : "fill-in",
-            "question_num": 8,
-           "question" : "C is a ____ level language",
-           "correct-answer" : "Low",
-           "incorrect-answer" :
-           [
-               "High",
-               "Medium",
-               "Web"
-           ] 
-           },
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "What was the first successful programming language?",
+			"Choice1" : "FORTRAN",
+			"Choice2" : "LISP",
+			"Choice3" : "COBOL",
+			"Answer": "Choice1",
+			"Explanation": "FORTRAN was the first successful programming language; the other two developed later."
+		},
         {
-        "type" : "multiple-choice",
-        "question_num": 9,
-        "question" : "Which of the following is not used for web development?",
-        "correct-answer" : "R",
-        "incorrect-answer" :
-        [
-            "PHP",
-            "HTML",
-            "JavaScript"
-        ] 
-        },
-           {
-            "type" : "fill-in",
-            "question_num": 11,
-           "question" : "Which type of language is easier to code in?",
-           "correct-answer" : "High-level",
-           "incorrect-answer" :
-           [
-               "Low-Level",
-               "Basic",
-               "Binary"
-           ] 
-           }, 
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "Which of the following is not a programming language?",
+			"Choice1" : "Ruby on Rails",
+			"Choice2" : "RAM",
+			"Choice3" : "Python",
+			"Answer": "Choice2",
+			"Explanation": "RAM is not a programming language; the other two are."
+		},
         {
-        "type" : "multiple-choice",
-        "question_num": 12,
-        "question" : "Which language focuses on the visual appeal of a webpage?",
-        "correct-answer" : "CSS",
-        "incorrect-answer" :
-        [
-            "HTML",
-            "JavaScript",
-            "Python"
-        ] 
-        },
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "Which is not a level of coding?",
+			"Choice1" : "High",
+			"Choice2" : "Medium",
+			"Choice3" : "Low",
+			"Answer": "Choice2",
+			"Explanation": "Coding levels are defines as high and low only."
+		},
         {
-         "type" : "true-false",
-         "question_num": 13,
-        "question" : "Once you learn how to code in one language, it is easier to learn others due to the similar features.",
-        "correct-answer" : "True",
-        "incorrect-answer" :
-        [
-            "False"
-        ] 
-        }, 
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "Which of the following is not used for web development?",
+			"Choice1" : "JavaScript",
+			"Choice2" : "HTML",
+			"Choice3" : "R",
+			"Answer": "Choice3",
+			"Explanation": "JavaScript and HTML are both not used in web development, while R is not."
+		},
         {
-            "type" : "multiple-choice",
-            "question_num": 14,
-           "question" : "Who is known as the first computer programmer?",
-           "correct-answer" : "Ada Lovelace",
-           "incorrect-answer" :
-           [
-               "Charles Babbage",
-               "Bill Gates",
-               "Daniel Byron"
-           ] 
-           }, 
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "Which language focuses on the visual appeal of a webpage?",
+			"Choice1" : "CSS",
+			"Choice2" : "HTML",
+			"Choice3" : "JavaScript",
+			"Answer": "Choice1",
+			"Explanation": "CSS focuses on the visual appeal of a webpage; the other two help structure the page."
+		},
         {
-             "type" : "fill-in",
-            "question_num": 15,
-            "question" : "What does CSS stand for?",
-            "correct-answer" : "Cascading Style Sheet",
-            "incorrect-answer" :
-            [
-                "Computer Styling Sheet",
-                "Corrective Styling Sheet",
-                "Constructive Styling Sheet"
-            ] 
-            },
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "Who is known as the first computer programmer?",
+			"Choice1" : "Charles Babbage",
+			"Choice2" : "Ada Lovelace",
+			"Choice3" : "Daniel Byron",
+			"Answer": "Choice2",
+			"Explanation": "The first computer programmer was Ada Lovelace."
+		},
         {
-             "type" : "multiple-choice",
-            "question_num": 16,
-             "question" : "What language does Node.js use?",
-             "correct-answer" : "JavaScript",
-             "incorrect-answer" :
-            [
-                "Java",
-                "HTML",
-                "Java Source"
-            ] 
-        },
-           {
-            "type" : "true-false",
-            "question_num": 17,
-           "question" : "Majority projects use only one programming language",
-           "correct-answer" : "False",
-           "incorrect-answer" :
-           [
-               "True"
-           ] 
-           },
-           {
-            "type" : "multiple-choice",
-            "question_num": 18,
-           "question" : "There are over ___ programming languages today.",
-           "correct-answer" : "700",
-           "incorrect-answer" :
-           [
-               "700",
-               "800",
-               "900"
-           ] 
-           }
-    ],
-    
-    
-    
-    
-    
-    
-    
-    
-    "Quiz2": [
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "What language does Node.js use?",
+			"Choice1" : "Java",
+			"Choice2" : "HTML",
+			"Choice3" : "JavaScript",
+			"Answer": "Choice3",
+			"Explanation": "Node.js uses JavaScript."
+		},
         {
-        "type" : "multiple-choice",
-        "question_num": 1,
-        "question" : "Which is not a type of loop in programming?",
-        "correct-answer" : "if",
-        "incorrect-answer" :
-        [
-            "for",
-            "do",
-            "while"
-        ] 
-    },
-    {
-        "type" : "fill-in",
-        "question_num": 2,
-        "question" : "Who is responsible for writing a program for a computer",
-        "correct-answer" : "Programmer",
-        "incorrect-answer" :
-        [
-            "Translator",
-            "Compiler",
-            "Administrator"
-        ] 
-    },
-    {
-        "type" : "multiple-choice",
-        "question_num": 3,
-        "question" : "What language does Node.js use?",
-        "correct-answer" : "JavaScript",
-        "incorrect-answer" :
-        [
-            "Java",
-            "HTML",
-            "Java Source"
-        ] 
-    },
-    {
-        "type" : "fill-in",
-        "question_num": 4,
-        "question" : "What does CSS stand for?",
-        "correct-answer" : "Cascading Style Sheet",
-        "incorrect-answer" :
-        [
-            "Computer Styling Sheet",
-            "Corrective Styling Sheet",
-            "Constructive Styling Sheet"
-        ] 
-    },
-    {
-        "type" : "multiple-choice",
-        "question_num": 5,
-        "question" : "Computers run on ______ code",
-        "correct-answer" : "binary",
-        "incorrect-answer" :
-        [
-            "primary",
-            "language",
-            "decimal"
-        ] 
-    },
-    {
-        "type" : "fill-in",
-        "question_num": 6,
-        "question" : "Python is a ______ language",
-        "correct-answer" : "Scripting",
-        "incorrect-answer" :
-        [
-            "Markup",
-            "Compiling",
-            "Random"
-        ] 
-    },
-    {
-             "type" : "multiple-choice",
-             "question_num": 7,
-             "question" : "What language does Node.js use?",
-             "correct-answer" : "JavaScript",
-             "incorrect-answer" :
-            [
-                "Java",
-                "HTML",
-                "Java Source"
-            ] 
-        },
-           {
-            "type" : "true-false",
-            "question_num": 8,
-           "question" : "Majority projects use only one programming language",
-           "correct-answer" : "False",
-           "incorrect-answer" :
-           [
-               "True"
-           ] 
-           },
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "There are over ___ programming languages today.",
+			"Choice1" : "700",
+			"Choice2" : "800",
+			"Choice3" : "900",
+			"Answer": "Choice1",
+			"Explanation": "There are over 700 programming languages that exist today."
+		},
         {
-         "type" : "fill-in",
-         "question_num": 10,
-        "question" : "HTML stands for?",
-        "correct-answer" : "HyperText Markup Language",
-        "incorrect-answer" :
-        [
-            "HyperText Main Language",
-            "HighTech Markup Language",
-            "HighTech Main Language"
-        ] 
-        }, 
+			"Type": "TF",
+			"Question_Num": 7,
+			"Question" : "Once you learn how to code in one language, it is easier to learn others.",
+			"Answer" : "True",
+			"Explanation" : "If you can code in one language, it is easier to learn others due to similar features."
+		},
         {
-        "type" : "multiple-choice",
-        "question_num": 11,
-        "question" : "Which of the following is used for web development?",
-        "correct-answer" : "JavaScript",
-        "incorrect-answer" :
-        [
-            "Python",
-            "R",
-            "C++"
-        ] 
-    },
-    {
-        "type" : "true-false",
-        "question_num": 12,
-        "question" : "The first ever computer virus was meant to be malicious.",
-        "correct-answer" : "False",
-        "incorrect-answer" :
-        [
-            "True"
-        ] 
-    },
-    {
-            "type" : "multiple-choice",
-            "question_num": 13,
-           "question" : "What was the first successful programming language?",
-           "correct-answer" : "FORTRAN",
-           "incorrect-answer" :
-           [
-               "C++",
-               "LISP",
-               "COBOL"
-           ] 
-    }, 
-    {
-        "type" : "multiple-choice",
-        "question_num": 14,
-        "question" : "What was the earliest programmable computer?",
-        "correct-answer" : "The Analytical Engine",
-        "incorrect-answer" :
-        [
-            "The Internet",
-            "FORTRAN",
-            "Java Analytics"
-        ] 
-    },
-    {
-        "type" : "fill-in",
-        "question_num": 15,
-        "question" : "What does OOP stand for?",
-        "correct-answer" : "Object Oriented Programming",
-        "incorrect-answer" :
-        [
-            "On Object Programming",
-            "Object or Programming",
-            "Objective Object Programming"
-        ] 
-    },
-    {
-        "type" : "multiple-choice",
-        "question_num": 16,
-        "question" : "Computers run on ______ code",
-        "correct-answer" : "binary",
-        "incorrect-answer" :
-        [
-            "primary",
-            "language",
-            "decimal"
-        ] 
-    }
-]
+			"Type": "TF",
+			"Question_Num": 7,
+			"Question" : "A majority of projects use only one programming language.",
+			"Answer" : "False",
+			"Explanation" : "Projects often use more than one programming language (ex. HTML, CSS and JS are often used together)."
+		},
+        {
+			"Type": "TF",
+			"Question_Num": 7,
+			"Question" : "Are variables in python strongly typed?",
+			"Answer" : "False",
+			"Explanation" : "Variables are loosley types in python."
+		}
+	],
+	"Quiz2": [
+		{
+			"Type": "Blank",
+			"Question_Num": 1,
+			"Question_1": "Who is responsible for writing a program for a computer?",
+			"Answer": "Programmer",
+			"Explanation": "Programmers are responsible for coding and writing programs."
+		},
+        {
+			"Type": "Blank",
+			"Question_Num": 1,
+			"Question_1": "What does CSS stand for? ",
+			"Answer": "Cascading Style Sheets",
+			"Explanation": "CSS stands for Cascading Style Sheets."
+		},
+        {
+			"Type": "Blank",
+			"Question_Num": 1,
+			"Question_1": "Python is a _____ language. ",
+			"Answer": "Scripting Language",
+			"Explanation": "Python classifies as a scripting language."
+		},
+        {
+			"Type": "Blank",
+			"Question_Num": 1,
+			"Question_1": "What does OOP stand for? ",
+			"Answer": "Object Oriented Programming",
+			"Explanation": "OOP stands for Object Oriented Programming."
+		},
+        {
+			"Type": "Blank",
+			"Question_Num": 1,
+			"Question_1": "HTML stands for: ",
+			"Answer": "HyperText MarkUp Language",
+			"Explanation": "HTML stands for HyperText Markup Language."
+		},
+		{
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "Which is not a type of loop in programming?",
+			"Choice1" : "for",
+			"Choice2" : "if",
+			"Choice3" : "while",
+			"Answer": "Choice2",
+			"Explanation": "For loops and while loops exist; if, on the other hand, is for statements."
+		},
+        {
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "What language does Node.js use?",
+			"Choice1" : "Java",
+			"Choice2" : "HTML",
+			"Choice3" : "JavaScript",
+			"Answer": "Choice3",
+			"Explanation": "Node.js uses JavaScript."
+		},
+        {
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "Computers run on ____ code.",
+			"Choice1" : "Binary",
+			"Choice2" : "Primary",
+			"Choice3" : "Decimal",
+			"Answer": "Choice1",
+			"Explanation": "Most computers and electronics run of binary code."
+		},
+        {
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "What is the lowest storage unit?",
+			"Choice1" : "Bit",
+			"Choice2" : "Byte",
+			"Choice3" : "Gigabyte",
+			"Answer": "Choice1",
+			"Explanation": "Bits are the smallest/lowest storage unit."
+		},
+        {
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "Which of the following is used for web development?",
+			"Choice1" : "Python",
+			"Choice2" : "R",
+			"Choice3" : "JavaScript",
+			"Answer": "Choice3",
+			"Explanation": "JavaScript can be used for web development."
+		},
+        {
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "What was the earliest programmable computer?",
+			"Choice1" : "The Internet",
+			"Choice2" : "The Analytical Engine",
+			"Choice3" : "FORTRAN",
+			"Answer": "Choice2",
+			"Explanation": "The Analytical Engine was the earliest programmable computer, developed by Charles Babbage."
+		},
+        {
+			"Type": "SC",
+			"Question_Num": 3,
+			"Question": "There are over ___ programming languages today.",
+			"Choice1" : "700",
+			"Choice2" : "800",
+			"Choice3" : "900",
+			"Answer": "Choice1",
+			"Explanation": "There are over 700 programming languages that exist today."
+		},
+        {
+			"Type": "TF",
+			"Question_Num": 7,
+			"Question" : "A majority of projects use only one programming language.",
+			"Answer" : "False",
+			"Explanation" : "Projects often use more than one programming language (ex. HTML, CSS and JS are often used together)."
+		},
+        {
+			"Type": "TF",
+			"Question_Num": 7,
+			"Question" : "The first ever computer virus was meant to be malicious.",
+			"Answer" : "False",
+			"Explanation" : "The first every computer virus was not developed with harmful intentions."
+		},
+		{
+			"Type": "TF",
+			"Question_Num": 7,
+			"Question" : "Once you learn how to code in one language, it is easier to learn others.",
+			"Answer" : "True",
+			"Explanation" : "If you can code in one language, it is easier to learn others due to similar features."
+		}
+	]
 }
