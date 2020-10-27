@@ -9,35 +9,35 @@
 		},
         {
 			"Type": "Blank",
-			"Question_Num": 1,
+			"Question_Num": 2,
 			"Question_1": "HTML is a _____ language ",
 			"Answer": "markup",
 			"Explanation": "HTML is a markup language (HyperText MarkUp Language)"
 		},
         {
 			"Type": "Blank",
-			"Question_Num": 1,
+			"Question_Num": 3,
 			"Question_1": "C is a ____ level language. ",
 			"Answer": "low",
 			"Explanation": "C is a low level language."
 		},
         {
 			"Type": "Blank",
-			"Question_Num": 1,
+			"Question_Num": 4,
 			"Question_1": "Which type of language is easier to code in?",
 			"Answer": "High-Level",
 			"Explanation": "High-level languages are easier to code in."
 		},
         {
 			"Type": "Blank",
-			"Question_Num": 1,
+			"Question_Num": 5,
 			"Question_1": "What does CSS stand for? ",
 			"Answer": "Cascading Style Sheets",
 			"Explanation": "CSS stands for Cascading Style Sheets."
 		},
 		{
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 6,
 			"Question": "What is the most used programming language?",
 			"Choice1" : "Java",
 			"Choice2" : "Python",
@@ -47,7 +47,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 7,
 			"Question": "What was the first successful programming language?",
 			"Choice1" : "FORTRAN",
 			"Choice2" : "LISP",
@@ -57,7 +57,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 8,
 			"Question": "Which of the following is not a programming language?",
 			"Choice1" : "Ruby on Rails",
 			"Choice2" : "RAM",
@@ -67,7 +67,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 9,
 			"Question": "Which is not a level of coding?",
 			"Choice1" : "High",
 			"Choice2" : "Medium",
@@ -77,7 +77,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 10,
 			"Question": "Which of the following is not used for web development?",
 			"Choice1" : "JavaScript",
 			"Choice2" : "HTML",
@@ -87,7 +87,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 11,
 			"Question": "Which language focuses on the visual appeal of a webpage?",
 			"Choice1" : "CSS",
 			"Choice2" : "HTML",
@@ -97,7 +97,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 12,
 			"Question": "Who is known as the first computer programmer?",
 			"Choice1" : "Charles Babbage",
 			"Choice2" : "Ada Lovelace",
@@ -107,7 +107,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 13,
 			"Question": "What language does Node.js use?",
 			"Choice1" : "Java",
 			"Choice2" : "HTML",
@@ -117,7 +117,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 14,
 			"Question": "There are over ___ programming languages today.",
 			"Choice1" : "700",
 			"Choice2" : "800",
@@ -127,21 +127,21 @@
 		},
         {
 			"Type": "TF",
-			"Question_Num": 7,
+			"Question_Num": 15,
 			"Question" : "Once you learn how to code in one language, it is easier to learn others.",
 			"Answer" : "True",
 			"Explanation" : "If you can code in one language, it is easier to learn others due to similar features."
 		},
         {
 			"Type": "TF",
-			"Question_Num": 7,
+			"Question_Num": 16,
 			"Question" : "A majority of projects use only one programming language.",
 			"Answer" : "False",
 			"Explanation" : "Projects often use more than one programming language (ex. HTML, CSS and JS are often used together)."
 		},
         {
 			"Type": "TF",
-			"Question_Num": 7,
+			"Question_Num": 17,
 			"Question" : "Are variables in python strongly typed?",
 			"Answer" : "False",
 			"Explanation" : "Variables are loosley types in python."
@@ -157,35 +157,35 @@
 		},
         {
 			"Type": "Blank",
-			"Question_Num": 1,
+			"Question_Num": 2,
 			"Question_1": "What does CSS stand for? ",
 			"Answer": "Cascading Style Sheets",
 			"Explanation": "CSS stands for Cascading Style Sheets."
 		},
         {
 			"Type": "Blank",
-			"Question_Num": 1,
+			"Question_Num": 3,
 			"Question_1": "Python is a _____ language. ",
 			"Answer": "Scripting Language",
 			"Explanation": "Python classifies as a scripting language."
 		},
         {
 			"Type": "Blank",
-			"Question_Num": 1,
+			"Question_Num": 4,
 			"Question_1": "What does OOP stand for? ",
 			"Answer": "Object Oriented Programming",
 			"Explanation": "OOP stands for Object Oriented Programming."
 		},
         {
 			"Type": "Blank",
-			"Question_Num": 1,
+			"Question_Num": 5,
 			"Question_1": "HTML stands for: ",
 			"Answer": "HyperText MarkUp Language",
 			"Explanation": "HTML stands for HyperText Markup Language."
 		},
 		{
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 6,
 			"Question": "Which is not a type of loop in programming?",
 			"Choice1" : "for",
 			"Choice2" : "if",
@@ -195,7 +195,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 7,
 			"Question": "What language does Node.js use?",
 			"Choice1" : "Java",
 			"Choice2" : "HTML",
@@ -205,7 +205,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 8,
 			"Question": "Computers run on ____ code.",
 			"Choice1" : "Binary",
 			"Choice2" : "Primary",
@@ -215,7 +215,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 9,
 			"Question": "What is the lowest storage unit?",
 			"Choice1" : "Bit",
 			"Choice2" : "Byte",
@@ -225,7 +225,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 10,
 			"Question": "Which of the following is used for web development?",
 			"Choice1" : "Python",
 			"Choice2" : "R",
@@ -235,7 +235,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 11,
 			"Question": "What was the earliest programmable computer?",
 			"Choice1" : "The Internet",
 			"Choice2" : "The Analytical Engine",
@@ -245,7 +245,7 @@
 		},
         {
 			"Type": "SC",
-			"Question_Num": 3,
+			"Question_Num": 12,
 			"Question": "There are over ___ programming languages today.",
 			"Choice1" : "700",
 			"Choice2" : "800",
@@ -255,21 +255,21 @@
 		},
         {
 			"Type": "TF",
-			"Question_Num": 7,
+			"Question_Num": 13,
 			"Question" : "A majority of projects use only one programming language.",
 			"Answer" : "False",
 			"Explanation" : "Projects often use more than one programming language (ex. HTML, CSS and JS are often used together)."
 		},
         {
 			"Type": "TF",
-			"Question_Num": 7,
+			"Question_Num": 14,
 			"Question" : "The first ever computer virus was meant to be malicious.",
 			"Answer" : "False",
 			"Explanation" : "The first every computer virus was not developed with harmful intentions."
 		},
 		{
 			"Type": "TF",
-			"Question_Num": 7,
+			"Question_Num": 15,
 			"Question" : "Once you learn how to code in one language, it is easier to learn others.",
 			"Answer" : "True",
 			"Explanation" : "If you can code in one language, it is easier to learn others due to similar features."
