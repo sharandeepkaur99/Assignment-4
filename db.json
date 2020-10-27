@@ -273,6 +273,13 @@
 			"Question" : "Once you learn how to code in one language, it is easier to learn others.",
 			"Answer" : "True",
 			"Explanation" : "If you can code in one language, it is easier to learn others due to similar features."
+		},
+		{
+			"Type": "TF",
+			"Question_Num": 17,
+			"Question" : "Are variables in python strongly typed?",
+			"Answer" : "False",
+			"Explanation" : "Variables are typed loosely in python."
 		}
 	]
 }
