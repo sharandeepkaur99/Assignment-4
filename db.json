@@ -83,7 +83,7 @@
 			"Choice2" : "HTML",
 			"Choice3" : "R",
 			"Answer": "Choice3",
-			"Explanation": "JavaScript and HTML are both not used in web development, while R is not."
+			"Explanation": "JavaScript and HTML are both used in web development, while R is not."
 		},
         {
 			"Type": "SC",
