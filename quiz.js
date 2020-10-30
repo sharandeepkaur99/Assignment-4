@@ -174,7 +174,7 @@ function finish_quiz(){
 
 async function get_quiz_info(quiz_num, question_num){
     try {
-        const response = await fetch('https://my-json-server.typicode.com/sharandeepkaur99/Assignment-4' + quiz_num);
+        const response = await fetch('https://my-json-server.typicode.com/sharandeepkaur99/Assignment-4/Quiz1' + quiz_num);
         const result = await response.json();
         return result[question_num];
     }catch(err)
