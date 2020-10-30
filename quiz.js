@@ -6,27 +6,50 @@ const appState = {
     question_num: 0,
 }
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', () => {
 
-    load_view('#begin', '#view-widget');
-
-
-    document.querySelector('#quiz-select').onclick = function()
-    {
-        appState.name = document.querySelector('#name').value;
-        let temp = document.getElementsByName('quiz')
-        for(i=0; i<temp.length; i++)
-        {
-            if(temp[i].checked)
-            {
-                appState.quiz_num = temp[i].value;
-            }
-        }
-
-        load_quiz();
-
+    document.querySelector("#quiz_select").onsubmit = (e) => {
+        handle_form(e)
     }
-})
+  
+
+  document.querySelector("#view_widget").onclick = (e) => {
+      handle_vote(e)
+  }
+});
+
+
+const handle_form = (e) => {
+    var name = document.querySelector("#name").value;
+    var quiz_selection = document.querySelector("#quiz-select").value;
+    alert('Hello' + name + "you picked" + quiz-select);
+    if (quiz_select == "quiz_1"){
+        load_question()
+    }
+    else if (quiz_select == "quiz_2"){
+        load_question()
+    }
+
+}
+const handle_vote = (e) => {
+    console.log(e.target)
+    if (e.target.dataset.vote == "true"){
+       
+        appState.current_correct +=1 
+        load_question()
+    } else if (e.target.dataset.vote == "false"){
+        
+        appState.current_wrong +=1
+        load_question()()
+    }
+
+    if (appState.current_correct=10){
+        alert("10 correct, Restart")
+        appState.current_correct = 0;
+        appState.current_wrong = 0;
+    }
+    
+}
 
 function load_quiz()
 {
