@@ -45,7 +45,7 @@ async function load_question()
         finish_quiz();
     }
     const question = await get_quiz_info(appState.quiz_num, appState.question_num);
-    if (question["Type"] === "SC")
+    if (question["Type"] === "MC")
     {
         let vars = {
             current_question: question["Question_Num"],
@@ -54,23 +54,23 @@ async function load_question()
             choice2: question["Choice2"],
             choice3: question["Choice3"]
         }
-        load_view('#sc-question', '#question-view', vars)
+        load_view('#mc-question', '#question-view', vars)
     }
-    else if (question["Type"] === "Blank")
+    else if (question["Type"] === "Fill-In")
     {
         let vars = {
             current_question: question["Question_Num"],
-            question_1: question["Question_1"],
+            question: question["Question"],
         }
-        load_view('#blank-question', '#question-view', vars)
+        load_view('#fill-in-question', '#question-view', vars)
     }
-    else if (question["Type"] === "TF")
+    else if (question["Type"] === "True-False")
     {
         let vars = {
             current_question: question["Question_Num"],
             question: question["Question"]
         }
-        load_view('#tf-question', '#question-view', vars)
+        load_view('#true-false-question', '#question-view', vars)
     }
 }
 
@@ -79,7 +79,7 @@ async function check_answer(q_type)
 {
     const question = await get_quiz_info(appState.quiz_num, appState.question_num);
 
-    if (q_type === 'SC')
+    if (q_type === 'MC')
     {
         var answer;
         let temp = document.getElementsByName('choice')
@@ -99,7 +99,7 @@ async function check_answer(q_type)
             wrong();
         }
     }
-    else if (q_type === 'TF')
+    else if (q_type === 'True-False')
     {
         var answer;
         let temp = document.getElementsByName('choice')
@@ -119,7 +119,7 @@ async function check_answer(q_type)
             wrong();
         }
     }
-    else if (q_type === 'Blank')
+    else if (q_type === 'Fill-In')
     {
         let user_answer = document.querySelector('#answer').value;
         if (user_answer.toUpperCase() === question["Answer"].toUpperCase())
