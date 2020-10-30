@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
     load_view('#begin', '#view-widget');
 
 
-    document.querySelector('#quiz-select').onsubmit = function()
+    document.querySelector('#quiz-select').onclick = function()
     {
         appState.name = document.querySelector('#name').value;
         let temp = document.getElementsByName('quiz')
