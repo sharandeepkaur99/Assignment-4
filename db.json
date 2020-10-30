@@ -116,35 +116,25 @@
 			"Explanation": "Node.js uses JavaScript."
 		},
         {
-			"Type": "SC",
-			"Question_Num": 14,
-			"Question": "There are over ___ programming languages today.",
-			"Choice1" : "700",
-			"Choice2" : "800",
-			"Choice3" : "900",
-			"Answer": "Choice1",
-			"Explanation": "There are over 700 programming languages that exist today."
-		},
-        {
 			"Type": "TF",
-			"Question_Num": 15,
+			"Question_Num": 14,
 			"Question" : "Once you learn how to code in one language, it is easier to learn others.",
 			"Answer" : "True",
 			"Explanation" : "If you can code in one language, it is easier to learn others due to similar features."
 		},
         {
 			"Type": "TF",
-			"Question_Num": 16,
+			"Question_Num": 15,
 			"Question" : "A majority of projects use only one programming language.",
 			"Answer" : "False",
 			"Explanation" : "Projects often use more than one programming language (ex. HTML, CSS and JS are often used together)."
 		},
         {
 			"Type": "TF",
-			"Question_Num": 17,
-			"Question" : "Are variables in python strongly typed?",
+			"Question_Num": 16,
+			"Question" : "R cannot be used for statistical analysis?",
 			"Answer" : "False",
-			"Explanation" : "Variables are loosley types in python."
+			"Explanation" : "R works great for statistical analysis."
 		}
 	],
 	"Quiz2": [
@@ -266,10 +256,10 @@
 		},
 		{
 			"Type": "TF",
-			"Question_Num": 17,
-			"Question" : "Are variables in python strongly typed?",
+			"Question_Num": 16,
+			"Question" : "String is not a data type in Java",
 			"Answer" : "False",
-			"Explanation" : "Variables are typed loosely in python."
+			"Explanation" : "String is a data type in Java."
 		}
 	]
 }
