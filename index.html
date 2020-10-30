@@ -36,7 +36,7 @@
 </body>
 
 <script id="quiz-view" type="text/x-handlebars-template">
-    <h3 class="text-center">Score: {{this.right}} / {{this.total}}</h3>
+    <h2 class="text-center">Score: {{this.right}} / {{this.total}}</h2>
     <div id="question-view" class="text-center">
 
     </div>
@@ -45,7 +45,7 @@
 
 <script id="fill-in-question" type="text/x-handlebars-template">
     <h1 class="text-center">Question {{this.current_question}}</h1>
-    <h3 class="text-center">Fill in the blank.</h3>
+    <h2 class="text-center">Fill in the blank.</h2>
     <form id="t-answer-form" class="text-center" onsubmit="check_answer('Fill-In'); return false;">
         <label for="answer">{{question}}</label>
         <input id="answer" autocomplete="off" placeholder="Type your answer" type="text" required>
@@ -59,7 +59,7 @@
 
 <script id="mc-question" type="text/x-handlebars-template">
     <h1 class="text-center">Question {{this.current_question}}</h1>
-    <h3 class="text-center">{{question}}</h3>
+    <h2 class="text-center">{{question}}</h2>
     <form id="t-answer-form" onsubmit="check_answer('MC'); return false;">
         <p>Select one answer:</p>
         <input id="choice1" type="radio" name="choice" value="Choice1" required>
@@ -79,7 +79,7 @@
 
 <script id="true-false-question" type="text/x-handlebars-template">
     <h1 class="text-center">Question {{this.current_question}}</h1>
-    <h3 class="text-center">{{question}}</h3>
+    <h2 class="text-center">{{question}}</h2>
     <form id="t-answer-form" onsubmit="check_answer('True-False'); return false;">
         <p>True or False?</p>
         <input id="true" type="radio" name="choice" value="True" required>
@@ -95,7 +95,7 @@
 </script>
 
 <script id="explanation" type="text/x-handlebars-template">
-    <h3 class="text-center">Sorry, this answer is wrong </h3>
+    <h2 class="text-center">Sorry, this answer is wrong </h2>
     <p class="text-center">{{explanation}}</p>
     <form id="wrong-answer" class="text-center" onsubmit="load_quiz_view(); return false;">
         <input id="got-it" type="Submit" value="OK!!">
