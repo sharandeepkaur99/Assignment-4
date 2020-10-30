@@ -165,10 +165,10 @@ function finish_quiz(){
         score: score + '%'
     }
     if(appState.right >= appState.total * 0.8){
-        load_view('#passed', '#view-widget', vars);
+        load_view('#pass', '#view-widget', vars);
     }
     else{
-        load_view('#failed', '#view-widget', vars);
+        load_view('#fail', '#view-widget', vars);
     }
 }
 
