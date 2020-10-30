@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
 
-        load_quiz_view();
+        load_quiz();
 
     }
 })
 
-function load_quiz_view()
+function load_quiz()
 {
     let vars = {
         right: appState.right,
@@ -137,7 +137,7 @@ async function check_answer(q_type)
         load_view('#right', '#result');
         appState.right++;
         appState.question_num++;
-        setTimeout(load_quiz_view, 1000);
+        setTimeout(load_quiz, 1000);
     }
     function wrong()
     {
