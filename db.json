@@ -244,16 +244,6 @@
 			"Explanation": "The Analytical Engine was the earliest programmable computer, developed by Charles Babbage."
 		},
         {
-			"Type": "SC",
-			"Question_Num": 12,
-			"Question": "There are over ___ programming languages today.",
-			"Choice1" : "700",
-			"Choice2" : "800",
-			"Choice3" : "900",
-			"Answer": "Choice1",
-			"Explanation": "There are over 700 programming languages that exist today."
-		},
-        {
 			"Type": "TF",
 			"Question_Num": 13,
 			"Question" : "A majority of projects use only one programming language.",
