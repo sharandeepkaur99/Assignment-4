@@ -1,12 +1,13 @@
 const appState = {
     name : '',
     quiz_num : '',
-    correct: 0,
-    total: 17,
+    right: 0,
+    total: 16,
     question_num: 0,
 }
 
 document.addEventListener('DOMContentLoaded', function(){
+
     load_view('#begin', '#view-widget');
 
 
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function(){
 function load_quiz_view()
 {
     let vars = {
-        correct: appState.correct,
+        right: appState.right,
         total: appState.total
     }
     load_view('#quiz-view', '#view-widget', vars)
@@ -44,30 +45,30 @@ async function load_question()
         finish_quiz();
     }
     const question = await get_quiz_info(appState.quiz_num, appState.question_num);
-    if (question["type"] === "multiple-choice")
+    if (question["Type"] === "SC")
     {
         let vars = {
-            current_question: question["question_num"],
-            question: question["question"],
+            current_question: question["Question_Num"],
+            question: question["Question"],
             choice1: question["Choice1"],
             choice2: question["Choice2"],
             choice3: question["Choice3"]
         }
-        load_view('#multiple-choice-question', '#question-view', vars)
+        load_view('#sc-question', '#question-view', vars)
     }
-    else if (question["type"] === "fill-in")
+    else if (question["Type"] === "Blank")
     {
         let vars = {
-            current_question: question["question_num"],
-            question_1: question["question"],
+            current_question: question["Question_Num"],
+            question_1: question["Question_1"],
         }
         load_view('#blank-question', '#question-view', vars)
     }
-    else if (question["type"] === "true-false")
+    else if (question["Type"] === "TF")
     {
         let vars = {
-            current_question: question["question_num"],
-            question: question["question"]
+            current_question: question["Question_Num"],
+            question: question["Question"]
         }
         load_view('#tf-question', '#question-view', vars)
     }
@@ -78,7 +79,7 @@ async function check_answer(q_type)
 {
     const question = await get_quiz_info(appState.quiz_num, appState.question_num);
 
-    if (q_type === 'multiple-choice')
+    if (q_type === 'SC')
     {
         var answer;
         let temp = document.getElementsByName('choice')
@@ -89,16 +90,16 @@ async function check_answer(q_type)
                  answer = temp[i].value;
             }
         }
-        if (answer === question["correct_answer"])
+        if (answer === question["Answer"])
         {
-            correct();
+            right();
         }
         else
         {
             wrong();
         }
     }
-    else if (q_type === 'true-false')
+    else if (q_type === 'TF')
     {
         var answer;
         let temp = document.getElementsByName('choice')
@@ -109,21 +110,21 @@ async function check_answer(q_type)
                 answer = temp[i].value;
             }
         }
-        if (answer === question["correct_answer"])
+        if (answer === question["Answer"])
         {
-            correct();
+            right();
         }
         else
         {
             wrong();
         }
     }
-    else if (q_type === 'fill-in')
+    else if (q_type === 'Blank')
     {
         let user_answer = document.querySelector('#answer').value;
-        if (user_answer.toUpperCase() === question["correct_answer"].toUpperCase())
+        if (user_answer.toUpperCase() === question["Answer"].toUpperCase())
         {
-            correct();
+            right();
         }
         else
         {
@@ -131,10 +132,10 @@ async function check_answer(q_type)
         }
     }
 
-    function correct()
+    function right()
     {
         load_view('#right', '#result');
-        appState.correct++;
+        appState.right++;
         appState.question_num++;
         setTimeout(load_quiz_view, 1000);
     }
@@ -148,16 +149,17 @@ async function check_answer(q_type)
     }
 }
 
+
 function finish_quiz()
 {
-    var score = (appState.correct/appState.total).toFixed(1) * 100;
+    var score = (appState.right/appState.total).toFixed(1) * 100;
     let vars = {
         name : appState.name,
-        correct: appState.correct,
+        right: appState.right,
         total: appState.total,
         score: score + '%'
     }
-    if(appState.correct >= appState.total * 0.8)
+    if(appState.right >= appState.total * 0.8)
     {
         load_view('#passed', '#view-widget', vars);
     }
