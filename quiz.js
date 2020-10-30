@@ -34,11 +34,9 @@ const handle_form = (e) => {
 const handle_vote = (e) => {
     console.log(e.target)
     if (e.target.dataset.vote == "true"){
-       
         appState.current_correct +=1 
         load_question()
-    } else if (e.target.dataset.vote == "false"){
-        
+    } else if (e.target.dataset.vote == "false"){ 
         appState.current_wrong +=1
         load_question()()
     }
@@ -51,8 +49,7 @@ const handle_vote = (e) => {
     
 }
 
-function load_quiz()
-{
+function load_quiz(){
     let vars = {
         right: appState.right,
         total: appState.total
@@ -61,15 +58,12 @@ function load_quiz()
     load_question();
 }
 
-async function load_question()
-{
-    if (appState.question_num === appState.total)
-    {
+async function load_question(){
+    if (appState.question_num === appState.total){
         finish_quiz();
     }
     const question = await get_quiz_info(appState.quiz_num, appState.question_num);
-    if (question["Type"] === "MC")
-    {
+    if (question["Type"] === "MC"){
         let vars = {
             current_question: question["Question_Num"],
             question: question["Question"],
@@ -79,16 +73,14 @@ async function load_question()
         }
         load_view('#mc-question', '#question-view', vars)
     }
-    else if (question["Type"] === "Fill-In")
-    {
+    else if (question["Type"] === "Fill-In"){
         let vars = {
             current_question: question["Question_Num"],
             question: question["Question"],
         }
         load_view('#fill-in-question', '#question-view', vars)
     }
-    else if (question["Type"] === "True-False")
-    {
+    else if (question["Type"] === "True-False"){
         let vars = {
             current_question: question["Question_Num"],
             question: question["Question"]
@@ -98,12 +90,10 @@ async function load_question()
 }
 
 
-async function check_answer(q_type)
-{
+async function check_answer(q_type){
     const question = await get_quiz_info(appState.quiz_num, appState.question_num);
 
-    if (q_type === 'MC')
-    {
+    if (q_type === 'MC'){
         var answer;
         let temp = document.getElementsByName('choice')
         for(i=0; i<temp.length; i++)
@@ -113,17 +103,14 @@ async function check_answer(q_type)
                  answer = temp[i].value;
             }
         }
-        if (answer === question["Answer"])
-        {
+        if (answer === question["Answer"]){
             right();
         }
-        else
-        {
+        else{
             wrong();
         }
     }
-    else if (q_type === 'True-False')
-    {
+    else if (q_type === 'True-False'){
         var answer;
         let temp = document.getElementsByName('choice')
         for(i=0; i<temp.length; i++)
@@ -133,8 +120,7 @@ async function check_answer(q_type)
                 answer = temp[i].value;
             }
         }
-        if (answer === question["Answer"])
-        {
+        if (answer === question["Answer"]){
             right();
         }
         else
@@ -142,8 +128,7 @@ async function check_answer(q_type)
             wrong();
         }
     }
-    else if (q_type === 'Fill-In')
-    {
+    else if (q_type === 'Fill-In'){
         let user_answer = document.querySelector('#answer').value;
         if (user_answer.toUpperCase() === question["Answer"].toUpperCase())
         {
@@ -155,15 +140,13 @@ async function check_answer(q_type)
         }
     }
 
-    function right()
-    {
+    function right(){
         load_view('#right', '#result');
         appState.right++;
         appState.question_num++;
         setTimeout(load_quiz, 1000);
     }
-    function wrong()
-    {
+    function wrong(){
         let vars = {
             explanation: question['Explanation']
         }
@@ -173,8 +156,7 @@ async function check_answer(q_type)
 }
 
 
-function finish_quiz()
-{
+function finish_quiz(){
     var score = (appState.right/appState.total).toFixed(1) * 100;
     let vars = {
         name : appState.name,
@@ -182,18 +164,15 @@ function finish_quiz()
         total: appState.total,
         score: score + '%'
     }
-    if(appState.right >= appState.total * 0.8)
-    {
+    if(appState.right >= appState.total * 0.8){
         load_view('#passed', '#view-widget', vars);
     }
-    else
-    {
+    else{
         load_view('#failed', '#view-widget', vars);
     }
 }
 
-async function get_quiz_info(quiz_num, question_num)
-{
+async function get_quiz_info(quiz_num, question_num){
     try {
         const response = await fetch('https://my-json-server.typicode.com/sharandeepkaur99/Assignment-4' + quiz_num);
         const result = await response.json();
@@ -205,8 +184,7 @@ async function get_quiz_info(quiz_num, question_num)
 
 }
 
-function load_view(target, replace, vars)
-{
+function load_view(target, replace, vars){
     var source = document.querySelector(target).innerHTML;
     var template = Handlebars.compile(source);
     var html = template(vars);
