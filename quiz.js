@@ -3,7 +3,7 @@ const appState = {
     quiz_num : '',
     right: 0,
     total: 16,
-    question_num: 0,
+    question_num: 1,
 }
 
 document.addEventListener('DOMContentLoaded', () => {
