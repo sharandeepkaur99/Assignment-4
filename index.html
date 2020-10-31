@@ -22,7 +22,7 @@
    <form id="quiz-select" class="text-center">
         <label for="name">Please Enter Your Name:</label>
         <input id="name" autocomplete="off" placeholder="Name" type="text" required>
-        <h4>Select a Quiz Below</h4>
+        <h4><span style=font-weight:bold">Select a Quiz Below</span></h4>
         <label for="quiz1">Quiz 1</label>
         <input type="radio" id="quiz1" name="quiz" value="quiz1" required>
         <label for="quiz2">Quiz 2</label>
@@ -30,13 +30,13 @@
         <input id="start-quiz" type="submit" value="Start Quiz!">
     </form>
   
-  <div id="view_widget" class="text-center">
+  <div id="app_widget" class="text-center">
   </div>
   
 </body>
 
 <script id="quiz-view" type="text/x-handlebars-template">
-    <h2 class="text-center">Score: {{this.right}} / {{this.total}}</h2>
+    <h2 class="text-center"><span style=font-weight:bold">Score:</span> {{this.right}} / {{this.total}}</h2>
     <div id="question-view" class="text-center">
 
     </div>
@@ -44,7 +44,7 @@
 
 
 <script id="fill-in-question" type="text/x-handlebars-template">
-    <h1 class="text-center">Question {{this.current_question}}</h1>
+    <h1 class="text-center"><span style=font-weight:bold">Question</span> {{this.current_question}}</h1>
     <h2 class="text-center">Fill in the blank.</h2>
     <form id="t-answer-form" class="text-center" onsubmit="check_answer('Fill-In'); return false;">
         <label for="answer">{{question}}</label>
@@ -58,7 +58,7 @@
 
 
 <script id="mc-question" type="text/x-handlebars-template">
-    <h1 class="text-center">Question {{this.current_question}}</h1>
+    <h1 class="text-center"><span style=font-weight:bold">Question</span> {{this.current_question}}</h1>
     <h2 class="text-center">{{question}}</h2>
     <form id="t-answer-form" onsubmit="check_answer('MC'); return false;">
         <p>Select one answer:</p>
@@ -78,7 +78,7 @@
 </script>
 
 <script id="true-false-question" type="text/x-handlebars-template">
-    <h1 class="text-center">Question {{this.current_question}}</h1>
+    <h1 class="text-center"><span style=font-weight:bold">Question</span> {{this.current_question}}</h1>
     <h2 class="text-center">{{question}}</h2>
     <form id="t-answer-form" onsubmit="check_answer('True-False'); return false;">
         <p>True or False?</p>
@@ -95,28 +95,28 @@
 </script>
 
 <script id="explanation" type="text/x-handlebars-template">
-    <h2 class="text-center">Sorry, this answer is wrong </h2>
+    <h2 class="text-center"><span style="color:red>Sorry, this answer is wrong </span></h2>
     <p class="text-center">{{explanation}}</p>
-    <form id="wrong-answer" class="text-center" onsubmit="load_quiz(); return false;">
+    <form id="wrong-answer" class="text-center" onsubmit="quiz_status(); return false;">
         <input id="got-it" type="Submit" value="OK!!">
     </form>
 </script>
 
 <script id="right" type="text/x-handlebars-template">
-    <h2 class="text-center">That is right!</h2>
+    <h2 class="text-center"><span style="color:purple>That is right!</span></h2>
 </script>
 
 <script id="pass" type="text/x-handlebars-template">
-    <h1 class="text-center">Congrats {{name}}!  You passed the quiz! :)</h1>
-    <h2 class="text-center">Your score was: {{right}}/{{total}} ({{score}})</h2>
+    <h1 class="text-center"><span style="color:blue;font-weight:bold">Congrats {{name}}!  You passed the quiz! :)</span></h1>
+    <h2 class="text-center"><span style="color:blue>Your score was: {{right}}/{{total}} ({{score}})</span></h2>
     <form id="home" class="text-center" onsubmit="reload()">
         <input id="return" type="Submit" value="Return to the home page.">
     </form>
 </script>
 
 <script id="fail" type="text/x-handlebars-template">
-    <h1 class="text-center">Sorry {{name}},  unfortunately, you failed the quiz! Better luck next time!</h1>
-    <h2 class="text-center">Your score was: {{right}}/{{total}} ({{score}})</h2>
+    <h1 class="text-center"><span style="color:red;font-weight:bold">Sorry {{name}},  unfortunately, you failed the quiz! Better luck next time!</span></h1>
+    <h2 class="text-center"><span style="color:red>Your score was: {{right}}/{{total}} ({{score}})</span></h2>
     <form id="home" class="text-center" onsubmit="reload()">
         <input id="return" type="Submit" value="Return to the home page.">
     </form>
