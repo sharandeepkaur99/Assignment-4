@@ -67,9 +67,9 @@ async function load_question(){
         let vars = {
             current_question: question["Question_Num"],
             question: question["Question"],
-            choice1: question["Choice1"],
-            choice2: question["Choice2"],
-            choice3: question["Choice3"]
+            choicea: question["Choice1"],
+            choiceb: question["Choice2"],
+            choicec: question["Choice3"]
         }
         load_view('#mc-question', '#question-view', vars)
     }
