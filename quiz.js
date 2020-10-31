@@ -2,7 +2,7 @@ const appState = {
     name : '',
     quiz_num : '',
     right: 0,
-    total: 16,
+    total: 15,
     question_num: 1,
 }
 
