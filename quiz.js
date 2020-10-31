@@ -162,9 +162,9 @@ function completed(){
         name : appState.name,
         right: appState.right,
         total: appState.total,
-        score: score + '%'
+        score: score
     }
-    if(appState.right >= appState.total * 0.8){
+    if(appState.right >= appState.total * 0.75){
         load_view('#pass', '#view-widget', vars);
     }
     else{
