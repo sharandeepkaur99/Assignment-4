@@ -49,14 +49,6 @@ const handle_vote = (e) => {
     
 }
 
-function quiz_status(){
-    let vars = {
-        right: appState.right,
-        total: appState.total
-    }
-    load_view('#quiz-view', '#view-widget', vars)
-    load_question();
-}
 
 async function load_question(){
     if (appState.question_num === appState.total){
@@ -156,22 +148,6 @@ async function check_answer(q_type){
 }
 
 
-function completed(){
-    var score = (appState.right/appState.total).toFixed(1) * 100;
-    let vars = {
-        name : appState.name,
-        right: appState.right,
-        total: appState.total,
-        score: score
-    }
-    if(appState.right >= appState.total * 0.75){
-        load_view('#pass', '#view-widget', vars);
-    }
-    else{
-        load_view('#fail', '#view-widget', vars);
-    }
-}
-
 async function get_quiz(quiz_num, question_num){
     try {
         const response = await fetch('https://my-json-server.typicode.com/sharandeepkaur99/Assignment-4/Quiz1' + quiz_num);
@@ -189,4 +165,27 @@ function load_view(target, replace, vars){
     var template = Handlebars.compile(source);
     var html = template(vars);
     document.querySelector(replace).innerHTML = html;
+}
+function quiz_status(){
+    let vars = {
+        right: appState.right,
+        total: appState.total
+    }
+    load_view('#quiz-view', '#view-widget', vars)
+    load_question();
+}
+function completed(){
+    var score = (appState.right/appState.total).toFixed(1) * 100;
+    let vars = {
+        name : appState.name,
+        right: appState.right,
+        total: appState.total,
+        score: score
+    }
+    if(appState.right >= appState.total * 0.75){
+        load_view('#pass', '#view-widget', vars);
+    }
+    else{
+        load_view('#fail', '#view-widget', vars);
+    }
 }
