@@ -132,20 +132,6 @@ async function check_answer(q_type){
         }
     }
 
-    function right(){
-        load_view('#right', '#result');
-        appState.right++;
-        appState.question_num++;
-        setTimeout(quiz_status, 1000);
-    }
-    function wrong(){
-        let vars = {
-            explanation: question['Explanation']
-        }
-        appState.question_num++;
-        load_view('#explanation', '#result', vars);
-    }
-}
 
 
 async function get_quiz(quiz_num, question_num){
@@ -166,6 +152,24 @@ function load_view(target, replace, vars){
     var html = template(vars);
     document.querySelector(replace).innerHTML = html;
 }
+    
+    
+function right(){
+        load_view('#right', '#result');
+        appState.right++;
+        appState.question_num++;
+        setTimeout(quiz_status, 1000);
+    }
+function wrong(){
+        let vars = {
+            explanation: question['Explanation']
+        }
+        appState.question_num++;
+        load_view('#explanation', '#result', vars);
+    }
+}
+
+
 function quiz_status(){
     let vars = {
         right: appState.right,
