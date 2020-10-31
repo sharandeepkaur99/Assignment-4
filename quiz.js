@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
 
-  document.querySelector("#view_widget").onclick = (e) => {
+  document.querySelector("#app_widget").onclick = (e) => {
       handle_vote(e)
   }
 });
@@ -49,7 +49,7 @@ const handle_vote = (e) => {
     
 }
 
-function load_quiz(){
+function quiz_status(){
     let vars = {
         right: appState.right,
         total: appState.total
@@ -144,7 +144,7 @@ async function check_answer(q_type){
         load_view('#right', '#result');
         appState.right++;
         appState.question_num++;
-        setTimeout(load_quiz, 1000);
+        setTimeout(quiz_status, 1000);
     }
     function wrong(){
         let vars = {
