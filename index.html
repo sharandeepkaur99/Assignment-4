@@ -95,7 +95,8 @@
 </script>
 
 <script id="explanation" type="text/x-handlebars-template">
-    <h2 class="text-center"><span style="color:red>Sorry, this answer is wrong </span></h2>
+    <p class="text-center"><span style="color:red>Sorry, this answer is wrong </span></p>
+    <br>
     <p class="text-center">{{explanation}}</p>
     <form id="wrong-answer" class="text-center" onsubmit="quiz_status(); return false;">
         <input id="got-it" type="Submit" value="OK!!">
@@ -103,7 +104,7 @@
 </script>
 
 <script id="right" type="text/x-handlebars-template">
-    <h2 class="text-center"><span style="color:purple>That is right!</span></h2>
+    <p class="text-center"><span style="color:purple>That is right!</span></p>
 </script>
 
 <script id="pass" type="text/x-handlebars-template">
