@@ -2,7 +2,7 @@ const appState = {
     name : '',
     quiz_num : '',
     right: 0,
-    total: 15,
+    total: 16,
     question_num: 1,
 }
 
@@ -60,9 +60,9 @@ function quiz_status(){
 
 async function load_question(){
     if (appState.question_num === appState.total){
-        finish_quiz();
+        completed();
     }
-    const question = await get_quiz_info(appState.quiz_num, appState.question_num);
+    const question = await get_quiz(appState.quiz_num, appState.question_num);
     if (question["Type"] === "MC"){
         let vars = {
             current_question: question["Question_Num"],
@@ -91,7 +91,7 @@ async function load_question(){
 
 
 async function check_answer(q_type){
-    const question = await get_quiz_info(appState.quiz_num, appState.question_num);
+    const question = await get_quiz(appState.quiz_num, appState.question_num);
 
     if (q_type === 'MC'){
         var answer;
@@ -156,7 +156,7 @@ async function check_answer(q_type){
 }
 
 
-function finish_quiz(){
+function completed(){
     var score = (appState.right/appState.total).toFixed(1) * 100;
     let vars = {
         name : appState.name,
@@ -172,7 +172,7 @@ function finish_quiz(){
     }
 }
 
-async function get_quiz_info(quiz_num, question_num){
+async function get_quiz(quiz_num, question_num){
     try {
         const response = await fetch('https://my-json-server.typicode.com/sharandeepkaur99/Assignment-4/Quiz1' + quiz_num);
         const result = await response.json();
